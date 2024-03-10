@@ -1,5 +1,7 @@
 package Help;
 
+import java.util.Arrays;
+
 public class Enternet {
     public static void main(String[] args) {
 //        //создаем переменные и присваиваем им значения
@@ -142,7 +144,7 @@ public class Enternet {
 //     Character ch = new Character(c2); //дальше работа с объектом ch
 //     if (Character.isLetter(c2)) System.out.println(c2 + " is letter");
 //     System.out.println("Capitalized " + ch.charValue() + " is " + Character.toUpperCase(c2));
-     //Работа со строками, используем класс String и StringBuffer
+        //Работа со строками, используем класс String и StringBuffer
 //      -  String s = "abc";
 //        s = s.replace('a', 'b');
 //        System.out.println(s);
@@ -152,30 +154,30 @@ public class Enternet {
 //      -  char[] chs = {'a', 'b', 'c', 'e', 'z', 'k'}; //Пока не в мой уровень
 //        String str = new String(chs, 3, 2);
 //        System.out.println(str);
-      //Длина строки
+        //Длина строки
 //      -  System.out.println("abc5 6".length()); // Считает количество символов в кавычках, пробел идет тоже как символ
-      //Сравнение строк
+        //Сравнение строк
         //Используется функция equals
         // if (s1.equals (s2))..// - выдержка из констекста
-      //Добавление к строке, числа
+        //Добавление к строке, числа
 //      -  String str = "2*12=";
 //        str = str + 24;
 //        System.out.println(str);
 
-      //Функция замены .replace //s.replace//s.replaceAll//s.replaceFirst//
+        //Функция замены .replace //s.replace//s.replaceAll//s.replaceFirst//
 
-          //s.replace - замена указаных в первом апострофе символов на второй апостроф, причем символы меняются
+        //s.replace - замена указаных в первом апострофе символов на второй апостроф, причем символы меняются
         //все которые указаны
 //        String s = "autoservice";
 //        s = s.replace('e','j');
 //        System.out.println(s);
 //        //Вывод консоль// - autosjrvicj
-           //s.replaceAll - замена в первой части двойных ковычек на вторую часть двойных ковычек, только то что указано
+        //s.replaceAll - замена в первой части двойных ковычек на вторую часть двойных ковычек, только то что указано
 //        String s = "autoservice";
 //        s = s.replaceAll("auto","brake");
 //        System.out.println(s);
 //        //Вывод консоль// - brakeservice
-           //s.replaceFirst - заменяет первую подстроку данной строки, которая соответствует заданому регулярному
+        //s.replaceFirst - заменяет первую подстроку данной строки, которая соответствует заданому регулярному
         //выражению, с данной заменой другими словами – метод в Java позволяет заменить первое
         //вхождение слова или словосочетания в строке
 //        String s = new String("Добро пожаловать на OTNULYA.ru");
@@ -183,14 +185,14 @@ public class Enternet {
 //        System.out.println(s.replaceFirst("(.*)OTNULYA(.*)", "MechPower"));
 //        //Вывод в консоль// - Look this: MechPower
 
-      //Функция изменения симвлов в верхний (.toUpperCase), либо нижний (.toLowerCase) регистр
+        //Функция изменения симвлов в верхний (.toUpperCase), либо нижний (.toLowerCase) регистр
 
 //        String s = new String("Добро пожаловать на сайт MechPower!");
 //        System.out.print("Верхнее преобразование '.toUpperCase' - ");
 //        System.out.println(s.toUpperCase());
 //        System.out.print("Нижнее преобразование '.toLowerCase' - ");
 //        System.out.println(s.toLowerCase());
-          //Вывод в консоль// -
+        //Вывод в консоль// -
         //Верхнее преобразование '.toUpperCase' - ДОБРО ПОЖАЛОВАТЬ НА САЙТ MECHPOWER!
         //Нижнее преобразование '.toLowerCase' - добро пожаловать на сайт mechpower!
 
@@ -198,33 +200,111 @@ public class Enternet {
 //        s.split(":");
 //        System.out.println(s);
 
+        ///Задачи///
 
+        //Задача: Повара попросили сделать салат.
+        //Если у повара есть ингредиенты для "Цезаря" (курица, овощи, соус и гренки), то лучше сделать его
+        //Если для "Цезаря" ингредиентов не нашлось, то сделать Оливье (овощи, колбаса или курица, яйцо)
+        //Если и для Оливье не нашлось ингредиентов, то сделать овощной салат (нужны только овощи)
+        //Если ингредиентов нет, то повар объявляет: У меня ничего нет.
+        //Написать набор условий, приготовления салатов, по приоритету (от Цезаря к овощному)
+        //Либо объявить о невозможности сделать салат
+        //Вывести на экран значение получившегося результата, проверка по разным переменным
 
+//        boolean chicken = false;
+//        boolean vegetables = false;
+//        boolean sauce = false;
+//        boolean toast = false;
+//        boolean sausage = false;
+//        boolean egg = false;
+//
+//        if (chicken && vegetables && sauce && toast) {
+//            System.out.println("Цезарь прибудет в ближайшее время");
+//        } else if (vegetables && sausage || chicken && egg){
+//            System.out.println("Оливье прибудет в ближайшее время");
+//        } else if (vegetables) {
+//            System.out.println("Овощной салат прибудет в ближайшее время");
+//        } else
+//            System.out.println("У меня ничего нет");
 
+        //Пока не изученный для меня материал
 
+//        //Произвести преобразование "234" в число типа int и прибавить к этому числу длину строки "some_text"
+//        String numberText = "234";
+//        int number = Integer.parseInt(numberText);
+//        String someText = "some_text";
+//        System.out.println(number + someText.length());
 
+        //Посчитать (a + b) ^ 2 = ?, при a = 3; b = 5;
+//        int a = 3;
+//        int b = 5;
+//        int c = a + b;
+//        int f = 2;
+//        double d = Math.pow(c, f);
+//        System.out.println(d); //правильная запись, хоть и более длинная (зависит от конкретного случая)
+        //либо
+//        int a = 3;
+//        int b = 5;
+//        int c = (a + b) * (a + b);
+//        System.out.println(c); //менее правильно так как при замне степени на 8 все идет по звезде
 
+        //Задача пока не моего уровня, но очень интересная, сам 10.03.24 решить не смог (7 дней занятий по Java)
 
+        //В автосервис приехала сломанная машина. Механики находят неисправность следующим образом.
+        //Если у маши нет бензина и ничего не сломано, то отдают машину владельцу и берут за диагностику 1000 рублей
+        //Если у машины проблема с двигателем, то чинят и берут 10000 рублей
+        //Если у машины проблема с электрикой, то чинят и берут 5000 рублей
+        //Если у машины проблема с коробкой передач, то чинят и берут 4000 рублей
+        //Если у машины проблема с колесами, то чинят и берут 2000 рублей
+        //Если две позиции сломаны, то на общий счет идет скидка 10%
+        //Если сломана коробка передач, и электрика или двигатель, то на общий счет скидка 20%
+        //Если нет бензина и что-то сломано, то за консультацию денег не берут
+        //Ситуации, что бензин есть и ничего не сломано - быть не может
+        //Ожидаемый результат: выведен на экран счет клиенту
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//        boolean hasFuel = true;
+//        boolean hasElectricsProblem = true;
+//        boolean hasMotorProblem = true;
+//        boolean hasTransmissionProblem = true;
+//        boolean hasWheelsProblem = true;
+//        boolean hasAnyProblem = hasElectricsProblem && hasTransmissionProblem && hasWheelsProblem && hasMotorProblem;
+//
+//        if (!hasFuel && hasAnyProblem) {
+//            System.out.println("Нет бензина, с вас 1000 рублей");
+//        }
+//        double price = 0;
+//        double discount = 1;
+//        int countProblems = 0;
+//        if (hasMotorProblem) {
+//            price += 10_000;
+//            countProblems++;
+//        }
+//        if (hasElectricsProblem) {
+//            price += 5_000;
+//            countProblems++;
+//        }
+//        if (hasTransmissionProblem) {
+//            price += 4_000;
+//            countProblems++;
+//        }
+//        if (hasWheelsProblem) {
+//            price += 2_000;
+//            countProblems++;
+//        }
+//        if (countProblems == 2) {
+//            discount -= 0.1;
+//        }
+//        if (hasTransmissionProblem && (hasElectricsProblem || hasMotorProblem)) {
+//            discount -= 0.2;
+//        }
+//        price = price * discount;
+//        System.out.println("Итоговая сумма: " + price);
 
 
     }
 }
+
+
+
+
+
