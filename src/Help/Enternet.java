@@ -194,9 +194,11 @@ public class Enternet {
         //Верхнее преобразование '.toUpperCase' - ДОБРО ПОЖАЛОВАТЬ НА САЙТ MECHPOWER!
         //Нижнее преобразование '.toLowerCase' - добро пожаловать на сайт mechpower!
 
-        String s = "boo:and:foo";
-        s.split(":");
-        System.out.println(s);
+//        String s = "boo:and:foo";
+//        s.split(":");
+//        System.out.println(s);
+
+
 
 
 
