@@ -1,120 +1,70 @@
 package Help;
 
-import java.util.Arrays;
-import java.util.Locale;
-
-public class Enternet {
+public class Howe_work {
     public static void main(String[] args) {
-//        //создаем переменные и присваиваем им значения
-//        int a = 2;
-//        int b = 3;
-//        int c = a + b;
-//        System.out.println("Сумма a и b = " + c);
-//        //Найдем периметр квадрата
+
+        //// З А Д А Ч И   И   П Р И М Е Р Ы \\\\
+
+          //Задача//Найдем периметр квадрата
 //        int d = 4;
 //        System.out.println("Периметр квадрата со стороной d => P = " + 4 * d);
-//        //Переменная определяется и объявляется одновременно:
-//        short  b;
-//        b = 3;
-        // Домашнее задание
-        // - найти площадь и периметр квадрата
-        // - найти площадь и периметр прямоугольника
-        // - найти площадь и периметр куба
 
-
-        //Квадрат и прямоугольник
+          //Задача//Квадрат и прямоугольник. Найти площадь и периметр.
 //        int x = 5; //длина 1 стороны
 //        int y = 6; //длина 2 стороны
 //        int s = x * y; //площадь
 //        int p = (x + y) * 2;
 //        System.out.println("Площадь =" +s);
 //        System.out.println("Периметр =" +p);
-        //Куб
+          //Задача//Куб. Найти площадь и периметр.
 //        int x = 3; //длина 1 стороны
 //        int s = (x * x) * 6; //площадь куба
 //        int p = x * 12; //периметр куба
 //        System.out.println("Площадь куба =" +s);
 //        System.out.println("Периметр куба =" +p);
-        // - найти кол-во зерен на шахматной доске, если
-        //на первую клетку положить одно зернышко, на
-        //вторую клетку два зернышка, на третью в два раза
-        //больше, чем на предыдущей, т.е. 4 и так далее...
-        // Шахманая доска 8 * 8 = 64 клетки
-//        long n = 64;
-//        long sum = 1;
-//        for (long i = 0; i <= n; i++) {
-//            sum += sum + sum + i;
-//        } System.out.println(sum);
-//         double переменная
-//        final double PI = 3.14;
-//        // final - используется для "финализации переменной,"
-//        // теперь переменной PI нельзя присвоить другой значение
-//        double r = 8.2;
-//        double k = r * r;
-//        double s = PI * r * r;
-//        System.out.println("Промежуточный вариант - " +k);
-//        System.out.println("Конечный вариант - " +s);
-//        //Степень, где 2 число, 4 степень
-//        double a = 2;
-//        double b = 4;
-//        double c = Math.pow(a, b);
-//        System.out.println(c);
-        // Задача
-//        int var1 = 5;
-//        int var2 = 2;
-//        int var3 = var1 / var2;
-//        System.out.println("Int Var3 = " + var3);
-//        int min = 30;
-//        int max = 100;
-//        int result = (int) (Math.random() * (max - min + 1) + min);
-//         System.out.println(result);
-//Написать программу для вычисления площади круга.!
-//Найти длину окружности.!
-//Написать формулу вычисления стоимости Евро.!
-//если курс Евро к Доллару 1,1.
-//Найти соотношение площади Беларуси к площади Украины.
-//Найти, во сколько раз площадь Москвы больше площади Берлина.
-//Если клиент положил в банк 1000€ под 3,5%,
-//какая сумма будет его ждать через семь лет?
-        //ПЛОЩАДЬ КРУГА
-//       final double Pi = 3.14;
-//       double r = 4.25;
-//       double sCircle = Pi * (r * r);
-//       System.out.println(sCircle);
-        //ДЛИНА ОКРУЖНОСТИ
+
+          //Задача// - найти кол-во зерен на шахматной доске, если на первую клетку положить одно зернышко,
+          //на вторую клетку два зернышка, на третью в два раза больше, чем на предыдущей, т.е. 4 и так далее...
+          //Шахманая доска 8 * 8 = 64 клетки - 11.03.24 - не решенная
+
+          //Задача//Найти площадь круга
+//        final double Pi = 3.14;
+//        double r = 4.25;
+//        double sCircle = Pi * (r * r);
+//        System.out.println(sCircle);
+
+          //Задача//Найти длину окружности
 //        final double Pi = 3.14;
 //        double r =4;
 //        double d = 2 * r;
 //        double S = Pi * d;
 //        System.out.println("Длина окружности = " +S);
-//      //Курс Евро к Доллару, коефицент 1.1 формула, Евро дороже доллара
+
+          //Задача//Найти курс Евро к Доллару, коефицент 1.1 формула, Евро дороже доллара
 //        double dollar = 2;
 //        double euro = dollar * 1.1;
 //        System.out.println("Евро стоит = " +euro);
-        //Найти соотношение площади Беларуси (207600 км) к площади Украины (603628 км)
+
+          //Задача//Найти соотношение площади Беларуси (207600 км) к площади Украины (603628 км)
 //        double sBelarus = 207600;
 //        double sUkraine = 603628;
 //        double ratio = sBelarus /  sUkraine;
 //        System.out.println("Соотношение площади Белоруссии к Украине равно " +ratio);
-        //Найти, во сколько раз площадь Москвы (2511 км) больше площади Берлина (891,8 км)
+
+          //Задача//Найти, во сколько раз площадь Москвы (2511 км) больше площади Берлина (891,8 км)
 //        double sMoscow = 2511;
 //        double sBerlin = 891.8;
 //        double answer = sMoscow / sBerlin;
 //        System.out.println("Площадь Москвы больше площади Берлина в " +answer);
-        //Если клиент положил в банк 1000€ под 3,5%, какая сумма будет его ждать через семь лет?
+
+          //Задача//Если клиент положил в банк 1000€ под 3,5%, какая сумма будет его ждать через семь лет?
 //        double bank = 4;
 //        double client = 1000;
 //        double finishMoney = (client * bank / 100 * 7) + client;
 //        System.out.println(finishMoney);
-//        int result = (int) Math.random();
-        //ДЛИНА СИМВОЛОВ В КАВЫЧКАХ, ФОРМУЛА
-//        int n = "Mech Power".length();
-//        System.out.println(n);
-        //КОЛИЧЕСТВО МАССИВА (СКОБОК)
-//        String[] array = {"Tic", "Tac", "Toe",
-//        "Tyc"};
-//        int n = array.length;
-//        System.out.println(n);
+
+
+
 //         int[] myArray;
 //         Object[] arrayOfObjects;
 //         int[] myArray; //Объявление массива
@@ -165,41 +115,11 @@ public class Enternet {
 //        str = str + 24;
 //        System.out.println(str);
 
-        //Функция замены .replace //s.replace//s.replaceAll//s.replaceFirst//
 
-        //s.replace - замена указаных в первом апострофе символов на второй апостроф, причем символы меняются
-        //все которые указаны
-//        String s = "autoservice";
-//        s = s.replace('e','j');
-//        System.out.println(s);
-//        //Вывод консоль// - autosjrvicj
-        //s.replaceAll - замена в первой части двойных ковычек на вторую часть двойных ковычек, только то что указано
-//        String s = "autoservice";
-//        s = s.replaceAll("auto","brake");
-//        System.out.println(s);
-//        //Вывод консоль// - brakeservice
-        //s.replaceFirst - заменяет первую подстроку данной строки, которая соответствует заданому регулярному
-        //выражению, с данной заменой другими словами – метод в Java позволяет заменить первое
-        //вхождение слова или словосочетания в строке
-//        String s = new String("Добро пожаловать на OTNULYA.ru");
-//        System.out.print("Look this: ");
-//        System.out.println(s.replaceFirst("(.*)OTNULYA(.*)", "MechPower"));
-//        //Вывод в консоль// - Look this: MechPower
 
-        //Функция изменения симвлов в верхний (.toUpperCase), либо нижний (.toLowerCase) регистр
 
-//        String s = new String("Добро пожаловать на сайт MechPower!");
-//        System.out.print("Верхнее преобразование '.toUpperCase' - ");
-//        System.out.println(s.toUpperCase());
-//        System.out.print("Нижнее преобразование '.toLowerCase' - ");
-//        System.out.println(s.toLowerCase());
-        //Вывод в консоль// -
-        //Верхнее преобразование '.toUpperCase' - ДОБРО ПОЖАЛОВАТЬ НА САЙТ MECHPOWER!
-        //Нижнее преобразование '.toLowerCase' - добро пожаловать на сайт mechpower!
 
-//        String s = "boo:and:foo";
-//        s.split(":");
-//        System.out.println(s);
+
 
         ///Задачи///
 
@@ -228,7 +148,7 @@ public class Enternet {
 //        } else
 //            System.out.println("У меня ничего нет");
 
-        //Пока не изученный для меня материал
+        //Задача//Пока не изученный для меня материал 11.03.24
 
 //        //Произвести преобразование "234" в число типа int и прибавить к этому числу длину строки "some_text"
 //        String numberText = "234";
@@ -236,7 +156,8 @@ public class Enternet {
 //        String someText = "some_text";
 //        System.out.println(number + someText.length());
 
-        //Посчитать (a + b) ^ 2 = ?, при a = 3; b = 5;
+        //Задача//Посчитать (a + b) ^ 2 = ?, при a = 3; b = 5;
+
 //        int a = 3;
 //        int b = 5;
 //        int c = a + b;
@@ -249,7 +170,7 @@ public class Enternet {
 //        int c = (a + b) * (a + b);
 //        System.out.println(c); //менее правильно так как при замне степени на 8 все идет по звезде
 
-        //Задача пока не моего уровня, но очень интересная, сам 10.03.24 решить не смог (7 дней занятий по Java)
+        //Задача//Пока не моего уровня, но очень интересная, сам 10.03.24 решить не смог (7 дней занятий по Java)
 
         //В автосервис приехала сломанная машина. Механики находят неисправность следующим образом.
         //Если у маши нет бензина и ничего не сломано, то отдают машину владельцу и берут за диагностику 1000 рублей
@@ -301,41 +222,10 @@ public class Enternet {
 //        price = price * discount;
 //        System.out.println("Итоговая сумма: " + price);
 
-//        //Символ перевода строки \n
-//
-//        String hello = "hello\n";
-//        String world = "world";
-//        System.out.println(hello + world);
-//        //Вывод панели//
-//        //hello
-//        //world
 
-        //Убрать лишние пробелы
-//
-//        String word1 = "              HELLO ";
-//        String word2 = " WORLD!";
-//        String trimmed = word1.trim();
-//        System.out.println(trimmed);
-//        //Вывод консоль//
-//        //HELLO
 
-        //Повторить строку n раз и добавить в нижний регистр
 
-//        String word1 = "HELLO ";
-//        String word2 = "WORLD!";
-//        String repeated = word1.repeat(10).toLowerCase(Locale.ROOT);
-//        System.out.println(repeated);
-//        //Вывод консоль//
-//        //hello hello hello hello hello hello hello hello hello hello
 
-        //Конкатонация
-
-//        String word1 = "HELLO ";
-//        String word2 = "WORLD!";
-//        String result = word1 + word2;
-//        System.out.println(result);
-//        //Вывод консоль//
-//        //HELLO WORLD!
 
 
     }
