@@ -1,5 +1,7 @@
 package Help;
 
+import java.util.Arrays;
+
 public class Dictionary {
     public static void main(String[] args) {
 
@@ -40,7 +42,7 @@ public class Dictionary {
 //        //F
 //        //G
 //        char ch = 'a'; //Типу char задаем переменную
-//        ch++;          //Добавляем к этой переменной 1
+//        ch++;          //Добавляем к этой переменной 1 и получаем следующий символ
 //        System.out.println(ch);
 //        //Вывод консоль//
 //        //b
@@ -100,8 +102,8 @@ public class Dictionary {
 //        double b = 4; //степень
 //        double c = Math.pow(a, b);
 //        System.out.println(c);
-          //Вывод консоль//
-          //16
+//        //Вывод консоль//
+//        //16
 
         //Перенос строки (без этого идет последовательно)
 
@@ -124,7 +126,7 @@ public class Dictionary {
 //        //world
 
         //Убрать лишние пробелы
-//
+
 //        String word1 = "              HELLO ";
 //        String trimmed = word1.trim();
 //        System.out.println(trimmed);
@@ -139,10 +141,9 @@ public class Dictionary {
 //        //Вывод консоль//
 //        //hello hello hello hello hello hello hello hello hello hello
 
-        //Функция замены .replace //s.replace//s.replaceAll//s.replaceFirst//
+        //Функция замены .replace //s.replace//s.replaceAll//s.replaceFirst
 
-        //s.replace - замена указаных в первом апострофе символов на второй апостроф, причем символы меняются
-          //все которые указаны
+        //s.replace - замена указаных в первом апострофе символов на второй, причем символы меняются все которые указаны
 //        String s = "autoservice";
 //        s = s.replace('e','j');
 //        System.out.println(s);
@@ -153,8 +154,8 @@ public class Dictionary {
 //        System.out.println(s);
 //        //Вывод консоль// - brakeservice
         //s.replaceFirst - заменяет первую подстроку данной строки, которая соответствует заданому регулярному
-          //выражению, с данной заменой другими словами – метод в Java позволяет заменить первое
-          //вхождение слова или словосочетания в строке
+//        //выражению, с данной заменой другими словами – метод в Java позволяет заменить первое
+//        //вхождение слова или словосочетания в строке
 //        String s = new String("Добро пожаловать на OTNULYA.ru");
 //        System.out.print("Look this: ");
 //        System.out.println(s.replaceFirst("(.*)OTNULYA(.*)", "MechPower"));
@@ -179,6 +180,32 @@ public class Dictionary {
 //        //Вывод консоль//
 //        //10
 
+        //Массивы
+
+//        String[] myArray; //Объявление массива
+//        myArray = new String[4]; //Создание массива, выделение на него памяти на 4 ячеек
+//        myArray[0] = "c";
+//        myArray[1] = "a";
+//        myArray[2] = "r";
+//        myArray[3] = "s";
+//        System.out.println(Arrays.toString(myArray));
+//        //Вывод консоль//
+//        //[c, a, r, s]
+//        String[] myArray2 = new String[4];//Объявление и создание массива
+//        myArray2[0] = "c";
+//        myArray2[1] = "a";
+//        myArray2[2] = "r";
+//        myArray2[3] = "s";
+//        System.out.println(Arrays.toString(myArray2));
+//        //Вывод консоль//
+//        //[c, a, r, s]
+//        String[] myArrays3 = {"c", "a", "r", "s"};//Объявление и создание массива, а так же запись значений
+//        System.out.println(Arrays.toString(myArrays3));
+//        //Вывод консоль//
+//        //[c, a, r, s]
+//        //после создания массива с помощью NEW, в его ячейках записаны значения по умолчанию, пример
+//        //boolean - false; int - 0; ссылки - null;
+
         //Количество ячеек массива
 
 //        String[] array = {"Tic", "Tac", "Toe", "Tyc"};
@@ -187,13 +214,20 @@ public class Dictionary {
 //        //Вывод консоль//
 //        //4
 
+        //Вывод информации. System.out.println()
 
-
-
-
-
-
-
+//        System.out.println("\"Khal Drogo's favorite word is \"athjahakar\"\"");//добавляет кавычки в классе String
+//        //Вывод консоль//
+//        //"Khal Drogo's favorite word is "athjahakar""
+//        System.out.println("H" + "a");//собирает Символы
+//        //Вывод консоль//
+//        //На
+//        System.out.println('H' + 'a');//Собирает по значению символов тип char, вкл высокий и низкий регистр
+//        //Вывод на консоль//
+//        //169
+//        System.out.println("abc5 6".length());//Считает кол-во символов в двойных кавычках, вкл пробел
+//        //Вывод консоль//
+//        //6
 
 
 
