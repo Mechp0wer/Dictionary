@@ -1,6 +1,7 @@
 package Help;
 
 import java.util.Arrays;
+import java.util.Locale;
 
 public class Enternet {
     public static void main(String[] args) {
@@ -299,6 +300,42 @@ public class Enternet {
 //        }
 //        price = price * discount;
 //        System.out.println("Итоговая сумма: " + price);
+
+//        //Символ перевода строки \n
+//
+//        String hello = "hello\n";
+//        String world = "world";
+//        System.out.println(hello + world);
+//        //Вывод панели//
+//        //hello
+//        //world
+
+        //Убрать лишние пробелы
+//
+//        String word1 = "              HELLO ";
+//        String word2 = " WORLD!";
+//        String trimmed = word1.trim();
+//        System.out.println(trimmed);
+//        //Вывод консоль//
+//        //HELLO
+
+        //Повторить строку n раз и добавить в нижний регистр
+
+//        String word1 = "HELLO ";
+//        String word2 = "WORLD!";
+//        String repeated = word1.repeat(10).toLowerCase(Locale.ROOT);
+//        System.out.println(repeated);
+//        //Вывод консоль//
+//        //hello hello hello hello hello hello hello hello hello hello
+
+        //Конкатонация
+
+//        String word1 = "HELLO ";
+//        String word2 = "WORLD!";
+//        String result = word1 + word2;
+//        System.out.println(result);
+//        //Вывод консоль//
+//        //HELLO WORLD!
 
 
     }
