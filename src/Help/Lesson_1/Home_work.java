@@ -1,6 +1,8 @@
 package Help.Lesson_1;
 
 import java.util.Arrays;
+import java.util.Locale;
+import java.util.stream.IntStream;
 
 public class Home_work {
     public static void main(String[] args) {
@@ -209,7 +211,34 @@ public class Home_work {
 //        //(первый массив - 1,2,5,7,10), (второй массив - 2,3,2,17,15),
 //        //(результат перемножения - (1*2), (2*3), (5*2), (7*17), (10*15))
 
+//        int[] array = {1, 2, 5, 7, 10};
+//        int[] array2 = {2, 3, 2, 17, 15};
+//        String[] array3 = new String[15];
+//        array3[0] = String.valueOf(array[0]);
+//        array3[1] = String.valueOf(array[1]);
+//        array3[2] = String.valueOf(array[2]);
+//        array3[3] = String.valueOf(array[3]);
+//        array3[4] = String.valueOf(array[4]);
+//        array3[5] = String.valueOf(array2[0]);
+//        array3[6] = String.valueOf(array2[1]);
+//        array3[7] = String.valueOf(array2[2]);
+//        array3[8] = String.valueOf(array2[3]);
+//        array3[9] = String.valueOf(array2[4]);
+//        array3[10] = String.valueOf(Integer.parseInt(String.valueOf(array[0] * array2[0])));
+//        array3[11] = String.valueOf(Integer.parseInt(String.valueOf(array[1] * array2[1])));
+//        array3[12] = String.valueOf(Integer.parseInt(String.valueOf(array[2] * array2[2])));
+//        array3[13] = String.valueOf(Integer.parseInt(String.valueOf(array[3] * array2[3])));
+//        array3[14] = String.valueOf(Integer.parseInt(String.valueOf(array[4] * array2[4])));
+//        System.out.println(Arrays.toString(array3));
+
         //Задача//В слове "Hello world!", заменить все l на r, сделать все буквы заглавными, вывести первые 8 символов
+
+//        String text = "Hello world";       //Решена самим с помощью инет, некоторые типы данных не известны 12.03.24
+//        int n = 8;
+//        while(n>11){
+//        n-=11;
+//        }
+//        System.out.print(text.substring(0,n).replace('l','r').toUpperCase());
 
 //        //Задача//Создать метод маскирования персональных данных, который:
 //        //Телефон (до/после маскирования): 79991113344 / 7999***3344

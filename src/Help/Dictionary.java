@@ -214,6 +214,18 @@ public class Dictionary {
 //        //Вывод консоль//
 //        //4
 
+        //Умножение в массиве
+
+//        int[] array = {2, 3, 4};  //создаем, объявляем, записываем первый целочисленный массив
+//        int[] array2 = {2, 3, 4}; //создаем, объявляем, записываем второй целочисленный массив
+//        String[] array3 = new String[3]; //создаем, объявляем, записываем третий строчный массив
+//        array3[0] = String.valueOf(Integer.parseInt(String.valueOf(array[0] * array2[0])));  //magic
+//        array3[1] = String.valueOf(Integer.parseInt(String.valueOf(array[1] * array2[1])));  //magic
+//        array3[2] = String.valueOf(Integer.parseInt(String.valueOf(array[2] * array2[2])));  //magic
+//        System.out.println(Arrays.toString(array3));
+//        //Вывод консоль//
+//        //[4, 9, 16]
+
         //Вывод информации. System.out.println()
 
 //        System.out.println("\"Khal Drogo's favorite word is \"athjahakar\"\"");//добавляет кавычки в классе String
