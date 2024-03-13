@@ -1,6 +1,10 @@
 package Help;
 
 import java.util.Arrays;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import static java.awt.SystemColor.text;
 
 public class Dictionary {
     public static void main(String[] args) {
@@ -125,13 +129,32 @@ public class Dictionary {
 //        //hello
 //        //world
 
-        //Убрать лишние пробелы
+        //Убрать лишние пробелы. (.trim())
 
 //        String word1 = "              HELLO ";
 //        String trimmed = word1.trim();
 //        System.out.println(trimmed);
 //        //Вывод консоль//
 //        //HELLO
+
+        //Обрезание. Вывод на панель части текста. (.substring ();)
+
+//        String text = "Hello world!"; //12 символов
+//        System.out.println(text.substring(0,7)); //где 0 первый символ, 7 последний символ(который не выводится)
+//        //Вывод консоль//
+//        //Hello w
+
+        //
+//        public class RegexExample
+//        String text = "Hello, Java! This is a sample text.";
+//        String pattern = "Java";
+//        Pattern regex = Pattern.compile(pattern);
+//        Matcher matcher = regex.matcher(text);
+//        if (matcher.find()) {
+//            System.out.println("Match found!");
+//        } else {
+//            System.out.println("No match found.");
+//        }
 
         //Повторить строку n раз и добавить в нижний регистр (ДВА ДЕЙСТВИЯ)
 
