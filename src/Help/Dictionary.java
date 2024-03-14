@@ -55,6 +55,23 @@ public class Dictionary {
 //        //Вывод консоль//
 //        //65;97
 
+        //Значения int в "2"; "8"; "16"; системах исчесления, для примера взято число 43
+
+//        int a1 = 0b00101011;    //двоичная система счисления (значения "0" и "1";)
+//        System.out.println(a1);
+//        //Вывод консоль//
+//        //43
+//
+//        int a2 = 053;           //восьмиричная система счисления (значения от "0" до "8";)
+//        System.out.println(a2);
+//        //Вывод консоль//
+//        //43
+//
+//        int a3 = 0x2b;          //шестнадцатиричная система счисления (значения от "0" до "9" и от "A" до "F";)
+//        System.out.println(a3);
+//        //Вывод консоль//
+//        //43
+
         //Переменные
 
 //        int a = 2;
@@ -100,6 +117,149 @@ public class Dictionary {
 //        //Вывод консоль//
 //        //25
 
+        //Остаток от деления "%", при делении на переменных целых чисел "int"
+
+//        int a = 11;
+//        int b = 3;
+//        int c = a/b;
+//        int d = a%b;
+//        System.out.println(c); //результат деления a/b
+//        System.out.println(d); //результат остатка от деления a/b
+//        //Вывод консоль//
+//        //3
+//        //2
+
+        //Операторы сравнения "<", ">", "<=", ">=", "==", "!=";
+
+//        int a = 3;
+//        int b = 5;
+//        System.out.println(a<b); //в данном типе либо "false", либо "true"
+//        //Вывод консоль//
+//        //true
+//        int c = 5;
+//        int d = 5;
+//        System.out.println(c>=d); //в данном типе либо "false", либо "true"
+//        //Вывод консоль//
+//        //true
+//        int e = 4;
+//        int f = 6;
+//        System.out.println(e==f); //в данном типе либо "false", либо "true"
+//        //Вывод консоль//
+//        //false
+//        int h = 3;
+//        int j = 7;
+//        System.out.println(j!=h); //в данном типе либо "false", либо "true"
+//        //Вывод консоль//
+//        //true
+
+        //Условный оператор "&&" = "and" = "и", является boolean значением
+
+//        //  b1  //  b2  //  b3  //
+//        // true // true // true // = true  //если все операторы равны "true", тогда "true"
+//        // false// true // true // = false //если один из операторов равен "false", тогда всё выражение равно "false"
+//        int a = 10;
+//        int b = 50;
+//        int c = 99;
+//        int d = 100;
+//        boolean e = a<b && ++c==d; //true&&true если начальное выражение равно true, java дальше не считает, поэтому "c" не меняется
+//        System.out.println(e);     //при операторе &&
+//        System.out.println(c);
+//        //Вывод консоль//
+//        //true
+//        //100
+//        int a1 = 10;
+//        int b1 = 50;
+//        int c1 = 99;
+//        int d1 = 100;
+//        boolean e1 = a1>b1 && ++c1==d1; //false&&true если начальное выражение равно false, java дальше считает, поэтому "c1" меняется
+//        System.out.println(e1);         //при операторе &&
+//        System.out.println(c1);
+//        //Вывод консоль//
+//        //false
+//        //99
+//
+        // Логический оператор "&" = "and" = "и", является boolean значением
+
+//        //  b1  //  b2  //  b3  //
+//        // true // true // true // = true  //если все операторы равны "true", тогда "true"
+//        // false// true // true // = false //если один из операторов равен "false", тогда всё выражение равно "false"
+//        int a = 10;
+//        int b = 50;
+//        int c = 99;
+//        int d = 100;
+//        boolean e = a>b & ++c==d; //false&&true если начальное выражение равно false, java дальше считает, поэтому "c" меняется
+//        System.out.println(e);    //при операторе &
+//        System.out.println(c);
+//        //Вывод консоль//
+//        //false
+//        //100
+
+        //Условный оператор "||" = "or" = "или", является boolean значением
+
+//        //  b1  //  b2  //  b3  //
+//        // true // true // true // = true  //если все операторы равны "true", тогда "true"
+//        // false// false// true // = false //если 1 или 2 из операторов равен "false", тогда всё выражение равно "true"
+//        // false// false// false// = false //если все операторы равны "false", тогда "false"
+//        int a = 10;
+//        int b = 50;
+//        int c = 99;
+//        int d = 100;
+//        boolean e = a<b || ++c==d; //true&&false если начальное выражение равно true, java дальше не считает, поэтому "c" не меняется
+//        System.out.println(e);     //при операторе ||
+//        System.out.println(c);
+//        //Вывод консоль//
+//        //true
+//        //99
+//        int a1 = 10;
+//        int b1 = 50;
+//        int c1 = 99;
+//        int d1 = 100;
+//        boolean e1 = a1>b1 || ++c1==d1; //false&&true если начальное выражение равно false, java дальше считает, поэтому "c1" меняется
+//        System.out.println(e1);         //при операторе ||
+//        System.out.println(c1);
+//        //Вывод консоль//
+//        //true
+//        //100
+
+        //Логический оператор "|" = "or" = "или", является boolean значением
+
+//        //  b1  //  b2  //  b3  //
+//        // false// false// true // = false //если 1 или 2 из операторов равен "false", тогда всё выражение равно "true"
+//        // false// false// false// = false //если все операторы равны "false", тогда "false"
+//        int a = 10;
+//        int b = 50;
+//        int c = 99;
+//        int d = 101;
+//        boolean e = a<b | ++c==d; //true&&false если начальное выражение равно true, java дальше считает, поэтому "c" меняется
+//        System.out.println(e);    //при операторе |
+//        System.out.println(c);
+//        //Вывод консоль//
+//        //true
+//        //100
+
+        // ??? //  Логический оператор "^" = "исключительный или" является boolean значением
+
+//        //  b1  //  b2  //  b3  //
+//        // true // true // true // = false //если все операторы равны "true", тогда всё выражение равно "false"
+//        // false// false// false// = false //если все операторы равны "false", тогда всё выражение равно "false"
+//        // false// false// true // = true  //если большее кол-во из операторов равено "false", тогда всё выражение равно "true"
+//        // false// true // true // = false //если большее кол-во из операторов равено "false", тогда всё выражение равно "true"
+//        boolean b1 = true;
+//        boolean b2 = true;
+//        boolean b3 = true;
+//        boolean b4 = true;
+//        System.out.println(b1^b2^b3^b4);
+//        //Вывод консоль//
+//        //false
+
+        //Логический оператор "!", принимает противоположенное значение
+
+//        boolean a1 = false;
+//        boolean b1 = !a1;
+//        System.out.println(b1);
+//        //Вывод консоль//
+//        //true
+
         //Возведение в степень
 
 //        double a = 2; //число
@@ -143,18 +303,6 @@ public class Dictionary {
 //        System.out.println(text.substring(0,7)); //где 0 первый символ, 7 последний символ(который не выводится)
 //        //Вывод консоль//
 //        //Hello w
-
-        //
-//        public class RegexExample
-//        String text = "Hello, Java! This is a sample text.";
-//        String pattern = "Java";
-//        Pattern regex = Pattern.compile(pattern);
-//        Matcher matcher = regex.matcher(text);
-//        if (matcher.find()) {
-//            System.out.println("Match found!");
-//        } else {
-//            System.out.println("No match found.");
-//        }
 
         //Повторить строку n раз и добавить в нижний регистр (ДВА ДЕЙСТВИЯ)
 
@@ -264,9 +412,16 @@ public class Dictionary {
 //        //Вывод консоль//
 //        //6
 
+
+
+
+
+
+
         //В А Ж Н О Е\\
 //        //При красном значении неправильно подобранного типа или класса, нужно нажать "Alt + Enter" и программа сама
           //подскажет какой тип данных можно испольховать! О Ч Е Н Ь   П О Л Е З Н Ы Й   Л А Й Ф Х А К   ! ! !
+
 
     }
 }
