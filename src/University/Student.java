@@ -10,8 +10,16 @@ package University;
      int gradeEconomics;
      int gradeForeignLanguage;
 
+      int getAverage() {
+         int average = (gradeMath + gradeEconomics + gradeForeignLanguage)/3;
+         return average;
+     }
 
-
+     void inf (){
+         System.out.println("\nНомер билета: "+number+"\nИмя: "+firsName+"\nФамилия: "+lastName+"\nГод обучения: "
+                 +year+"\nСредняя оценка: " + getAverage());
+     }
+     
 
      public static void main(String[] args) {
 
@@ -26,9 +34,7 @@ package University;
          Ivan.gradeMath = 4;
          Ivan.gradeEconomics = 4;
          Ivan.gradeForeignLanguage = 5;
-         int average = (Ivan.gradeMath+Ivan.gradeEconomics+ Ivan.gradeForeignLanguage)/3;
-         System.out.println("\nНомер билета: "+Ivan.number+"\nИмя: "+Ivan.firsName+"\nФамилия: "+Ivan.lastName+"\nГод обучения: "
-         +Ivan.year+"\nСредняя оценка: "+average);
+         Ivan.inf();
 
          Petr.number = 2;
          Petr.firsName = "Петр";
@@ -37,9 +43,7 @@ package University;
          Petr.gradeMath = 3;
          Petr.gradeEconomics = 4;
          Petr.gradeForeignLanguage = 3;
-         int average1 = (Petr.gradeMath+Petr.gradeEconomics+Petr.gradeForeignLanguage)/3;
-         System.out.println("\nНомер билета: "+Petr.number+"\nИмя: "+Petr.firsName+"\nФамилия: "+Petr.lastName+"\nГод обучения: "
-         +Petr.year+"\nСредняя оценка: "+average1);
+         Petr.inf();
 
          Oleg.number = 3;
          Oleg.firsName = "Олег";
@@ -48,13 +52,12 @@ package University;
          Oleg.gradeMath = 5;
          Oleg.gradeEconomics = 5;
          Oleg.gradeForeignLanguage = 5;
-         int average2 = (Oleg.gradeMath+Oleg.gradeEconomics+Oleg.gradeForeignLanguage)/3;
-         System.out.println("\nНомер билета: "+Oleg.number+"\nИмя: "+Oleg.firsName+"\nФамилия: "+Oleg.lastName+"\nГод обучения: "
-         +Oleg.year+"\nСредняя оценка: "+average2);
+         Oleg.inf();
 
 
 
      }
+
 
 
 
