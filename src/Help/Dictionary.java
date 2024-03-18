@@ -503,6 +503,99 @@ public class Dictionary {
           //Метод всегда имеет return type, можно назвать бесчисленное название имен (назвать по любому, как захочется)
           //Конструктор никогда не имеет return type, имя должно совпадать с именем класса
 
+        // Метод "void" - означает, что метод не возвращает никаких данных.
+
+        //Метод OverLoading
+
+          //Главное правило// Перезагруженные методы имеют одинаковые имена и разный список параметров
+          //Разный по типам данных\\
+          //void method (int a, String b)     {}    //типы данных разные, кол-во может быть одинаковым
+          //void method (double a, boolean b) {}
+          //Разный по количеству данных\\
+          //void method (int a, int b)        {}    //тип данных одинаковый, кол-во разное
+          //void method (int a, int b, int c) {}
+          //Разный по порядку\\
+          //void method (int a, String b)           //последовательность типов данных разный, сами данные и кол-во одинаковое
+          //void method (String a, int b)
+
+        //Метод OverLoading Rules
+
+          //Return type может быть разным либо быть одинаковым:
+          //void method (int a, String b)      {}
+          //void method (double a, boolean b)  {}
+          //int method (long a)                {}
+
+          //Пример//
+//public class methodOverLoading2 {
+//
+//    int sum (int i1, int i2) {
+//       return i1 + i2;
+//    }
+//
+//    String sum (String s1,String s2){
+//       return s1 + s2;
+//    }
+//}
+//class methodOverLoading2Test {
+//    public static void main(String[] args) {
+//        methodOverLoading2 mO2 = new methodOverLoading2();
+//        int a = mO2.sum(5,7);
+//        System.out.println(a);
+//        //Вывод консоль//
+//        //12
+//        String s = mO2.sum("привет,", " мой друг");
+//        System.out.println(s);
+//        //Вывод консоль//
+//        //привет, мой друг
+//
+//    }
+//
+//}
+
+          //Access modifier может быть одинаковый и различный:
+          //public void method (int a, int b)         {}
+          //private void method (int a, int b, int c) {}
+          //public int method (long a)                {}
+
+          //Методы, отличающиеся только return type или access modifier не являются overloaded (Compile ERROR):
+          //public void method (int a, String b)      {}
+          //private void method (int a, String b)     {}
+          //public String method (int a, String b)    {}
+
+        //Конструктор OverLoading
+
+          //Главное правило// Перезагруженные конструкторы имеют  разный список параметров
+          //Разный по типам данных\\
+          //Constructor (int a, String b)     {}    //типы данных разные, кол-во может быть одинаковым
+          //Constructor (double a, boolean b) {}
+          //Разный по количеству данных\\
+          //Constructor (int a, int b)        {}    //тип данных одинаковый, кол-во разное
+          //Constructor (int a, int b, int c) {}
+          //Разный по порядку\\
+          //Constructor (int a, String b)           //последовательность типов данных разный, сами данные и кол-во одинаковое
+          //Constructor (String a, int b)
+
+        //Конструктор OverLoading Rules
+
+          //Access modifier может быть одинаковый и различный:
+          //public Constructor (int a, int b)          {}
+          //private Constructor (int a, int b, int c)  {}
+          //public Constructor (long a)                {}
+          //Конструкторы, отличающиеся только access modifier не являются overloaded (Compile ERROR):
+          //public Constructor (int a, String b)       {}
+          //private Constructor (int a, String b)      {}
+
+        //T H I S//this в конструкторе
+
+          //Конструктор не может вызвать внутри себя overloaded конструктор по имени класса (Compile ERROR):
+          //Constructor (int a)                        {}
+          //Constructor (int a, int b)                 {}
+          //Используйте "this" на первой строке в теле для вызова overloaded конструктора внутри конструктора:
+          //public Constructor (int a)                 {}
+          //private Constructor (int a, String b)      {
+          //                          System.out.println("Its correct!")}
+
+
 
         //В А Ж Н О Е\\
 //        //При красном значении неправильно подобранного типа или класса, нужно нажать "Alt + Enter" и программа сама
