@@ -35,6 +35,11 @@ public class Dictionary {
 //        //Ложь -> false -> нет -> 0
 //        boolean answerTamara = false;
 
+        //Default values (Дефолтные значения или значения по умолчанию)
+
+          //Для - (byte, short, int, long) == 0; для (float, double) == 0.0;
+          //для (boolean) == false; для (char) == '\u0000; для (String) == null;
+
         //Символьный тип данных
 
 //        //Char - character (символ), 16 bit, таблица символов по CHAR, особое внимание на регистр букв H и h разные значения
@@ -412,10 +417,91 @@ public class Dictionary {
 //        //Вывод консоль//
 //        //6
 
+        //М Е Т О Д . Создание и использование
 
+//  public class Test20 {
+//    //создание метода
+//    int summa (int a, int b, int c) {   //summa - название метода; int a, int b, int c - input параметры, пишутся в скобках, тип данных может быть разным int, double, или даже class String
+//    int result = a + b + c;             //далее в фигурных скобках идет тело метода, в данном случае идет сумма 3 параметров (кто и что делает)
+//    return result;                      //которые раньше были input; return означает конец метода "result"
+//    }
+//  }
+//     //создаем новый класс
+//     class Test21 {
+//     //внутри этого класса, создаем метод main (psvm)
+//     public static void main(String[] args) {
+//     //т.к. метод summa относится к классу Test20, нужно создать объект класса Test20
+//     Test20 t = new Test20();                //создаем объект класса Test20 в классе Test21
+//     //создаем новую переменную summaTrexChisel и присваиваем ей значение метода t.summa
+//     int summaTrexChisel = t.summa(1,2,3);   //метод вызывается через точку ("."), в скобках указываются значения параметров
+//     //потом вызываем sout для визуализации значения переменной summaTrexChisel
+//     System.out.println(summaTrexChisel);
+//     }
+//  }
 
+        //Конструктор. //Конструктор всегда называется так же, как и класс из которого он исходит.
 
+          //Car car1 = new Car(); //Первый "Car" обозначает тип данных, "car1" - имя переменной, "new" - вызов/создание нового, второй "Car()" это конструктор
+          //BankAccount bA = new BankAccount(); //Первый "BankAccount" - тип данных, второй "BankAccount()" это конструктор
+          //String name = new String("Petr"); //Первый "String" - тип данных, второй "String("Petr")" это конструктор
 
+        //Типы конструктора.
+
+          //1 тип - Default        //создается компилятором, всегда без параметров, тело конструктора всегда пустое, его не видно, Для любого class в java есть default конструктор
+          //Car car1 = new Car(){} //В пустых фигурных скобках находятся значения Default. Тело конструктора является пустым. И внутри круглых скобок нет параметров.
+          //2 тип - User defined   //создается человеком (разработчиком), может быть с параметрами или без, тело конструктора может быть пустым или нет. Его видно, так как написали его мы сами.
+          //Car car1 = new Car(){a+b+c} //В фигурных скобках написано тело конструктора который мы сами вручную определяем.
+
+        //Параметры конструктора "()";
+
+          //Пример 1//
+          // public class Car {
+          //     Car(){
+          //
+          //     }
+          //
+          //   String color;
+          //   String engine;
+          // }
+          //
+          //   class CarTest {
+          //      public static void main (String []   args){
+          //   Car car1 = new Car();
+          //          System.out.println(car1.color);
+          //      }
+          //
+          //  }
+          //  //Вывод консоль//
+          //  //null             //Default значение (потому что у color нет никакого значения)
+          //
+
+          //Пример 2//
+          // public class Car {
+          //     Car(String cvet, String motor){
+          //     color=cvet;
+          //     engine=motor;
+          //     }
+          //
+          //   String color;
+          //   String engine;
+          // }
+          //
+          //   class CarTest {
+          //      public static void main (String []   args){
+          //   Car car1 = new Car("yellow", "V4");
+          //          System.out.println(car1.color);
+          //          System.out.println(car1.engine);
+          //      }
+          //
+          //  }
+          //  //Вывод консоль//
+          //  //yellow
+          //  //V4
+
+        //Различие метода и конструктора
+
+          //Метод всегда имеет return type, можно назвать бесчисленное название имен (назвать по любому, как захочется)
+          //Конструктор никогда не имеет return type, имя должно совпадать с именем класса
 
 
         //В А Ж Н О Е\\
