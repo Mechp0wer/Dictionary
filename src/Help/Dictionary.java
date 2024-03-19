@@ -595,6 +595,21 @@ public class Dictionary {
           //private Constructor (int a, String b)      {
           //                          System.out.println("Its correct!")}
 
+        //Контроллер доступа (Access modifier)\\ Указывается перед началом класса/типа данных
+
+          //public - элемент класса виден во всех классах всех пакетах
+          //private - имеет доступ только класс в котором создается. Соседний класс даже в одном файле, доступ не имеют
+          //(default) - существует тогда, когда access modifier не пишется, имеет доступ только внутри пакета
+          //protected - имеет доступ внутри пакета, и доступ во всех классах его потомков
+
+        //Описание ACCESS MODIFIER-ов
+
+          //CLASS//        -  public, (default);
+          //CONSTRUCTOR//  -  public, private, (default), protected;
+          //VARIABLE//     -  public, private, (default), protected;
+          //METHOD//       -  public, private, (default), protected;
+
+
 
 
         //В А Ж Н О Е\\
