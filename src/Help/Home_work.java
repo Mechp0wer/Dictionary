@@ -1,4 +1,4 @@
-package Help.Lesson_1;
+package Help;
 
 import java.util.Arrays;
 import java.util.Locale;
