@@ -11,7 +11,7 @@ public class Dictionary {
 
         //// Ш П А Р Г А Л К А    З Н А Н И Й \\\\
 
-        //Целочисленный тип данных
+        //Примитивный тип данных (primitive data types)
 
 //        //Byte - байт
 //        byte maxByte = 127;
@@ -38,7 +38,8 @@ public class Dictionary {
         //Default values (Дефолтные значения или значения по умолчанию)
 
           //Для - (byte, short, int, long) == 0; для (float, double) == 0.0;
-          //для (boolean) == false; для (char) == '\u0000; для (String) == null;
+          //для (boolean) == false; для (char) == '\u0000' или '0';
+          //для Reference типов данных (String, BankAccount, Car, House) == null (ничто);
 
         //Символьный тип данных
 
@@ -112,6 +113,15 @@ public class Dictionary {
 //        System.out.println(x);
 //        //Вывод консоль//
 //        //2
+
+        //Prefix && Postfix
+
+          //Prefix - это когда инкремент/декремент описывается перед переменной, ++x; --x;
+          //Postfix - это когда инкремент/декремент описывается после переменной, x++; x--;
+          //Пример//
+          //int a = 5;
+          //++a---a-a--+a++
+          //6-5-5+4=0 и "а" в конце становится 5
 
         //Сокращенная форма записи умножения и деления
 
@@ -402,6 +412,14 @@ public class Dictionary {
 //        //Вывод консоль//
 //        //[4, 9, 16]
 
+        //Создание объекта//Object creation
+
+          //BankAccount bA = new BankAccount; где
+          //BankAccount - тип данных переменной
+          //bA - имя переменной
+          //= - присвоение
+          //new BankAccount - вызов конструктора - создание объекта
+
         //Вывод информации. System.out.println()
 
 //        System.out.println("\"Khal Drogo's favorite word is \"athjahakar\"\"");//добавляет кавычки в классе String
@@ -597,7 +615,7 @@ public class Dictionary {
 
         //Контроллер доступа (Access modifier)\\ Указывается перед началом класса/типа данных
 
-          //public - элемент класса виден во всех классах всех пакетах
+          //public - элемент класса виден во всех классах всех  //в файле может быть только один public class
           //private - имеет доступ только класс в котором создается. Соседний класс даже в одном файле, доступ не имеют
           //(default) - существует тогда, когда access modifier не пишется, имеет доступ только внутри пакета
           //protected - имеет доступ внутри пакета, и доступ во всех классах его потомков
