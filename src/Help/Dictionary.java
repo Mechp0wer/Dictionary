@@ -457,17 +457,33 @@ public class Dictionary {
 //     }
 //  }
 
-        //Конструктор. //Конструктор всегда называется так же, как и класс из которого он исходит.
+        //Структура метода
+
+          //public static void main (String [] args){our code}
+          //"public" - access modifier
+          //"static" - non-access modifier(s)
+          //"void" - return type (то, что возвращает наш метод, что является его output)
+          //"main" - name (имя метода)
+          //"(String [] args)" - parameter(s) (обязательно наличие круглых скобок, но не обязательно его наполнение, без наполнения default)
+          //"{our code}" - body (тело метода, вся его функциональность)
+
+        //Конструктор //Основная цель - создание объекта //Конструктор всегда называется так же, как и класс из которого он исходит
 
           //Car car1 = new Car(); //Первый "Car" обозначает тип данных, "car1" - имя переменной, "new" - вызов/создание нового, второй "Car()" это конструктор
           //BankAccount bA = new BankAccount(); //Первый "BankAccount" - тип данных, второй "BankAccount()" это конструктор
           //String name = new String("Petr"); //Первый "String" - тип данных, второй "String("Petr")" это конструктор
 
+        //Создание конструктора
+
+          //Название как и название класса в котором он создается
+          //В круглых скобках, параметры
+          //В фигурных скобках, тело конструктора
+
         //Типы конструктора.
 
           //1 тип - Default        //создается компилятором, всегда без параметров, тело конструктора всегда пустое, его не видно, Для любого class в java есть default конструктор
           //Car car1 = new Car(){} //В пустых фигурных скобках находятся значения Default. Тело конструктора является пустым. И внутри круглых скобок нет параметров.
-          //2 тип - User defined   //создается человеком (разработчиком), может быть с параметрами или без, тело конструктора может быть пустым или нет. Его видно, так как написали его мы сами.
+          //2 тип - User defined   //создается человеком (разработчиком), может быть с параметрами или без, тело конструктора может быть пустым или нет. Его видно, так как написали его мы сами. При его наличии компилятор уже не будет создавать default конструктор
           //Car car1 = new Car(){a+b+c} //В фигурных скобках написано тело конструктора который мы сами вручную определяем.
 
         //Параметры конструктора "()";
@@ -538,6 +554,7 @@ public class Dictionary {
 
         //Метод OverLoading Rules
 
+          //RULE FIRST
           //Return type может быть разным либо быть одинаковым:
           //void method (int a, String b)      {}
           //void method (double a, boolean b)  {}
@@ -570,19 +587,22 @@ public class Dictionary {
 //
 //}
 
+          //RULE SECOND
           //Access modifier может быть одинаковый и различный:
           //public void method (int a, int b)         {}
           //private void method (int a, int b, int c) {}
           //public int method (long a)                {}
 
+          //RULE THIRD
           //Методы, отличающиеся только return type или access modifier не являются overloaded (Compile ERROR):
           //public void method (int a, String b)      {}
           //private void method (int a, String b)     {}
           //public String method (int a, String b)    {}
 
-        //Конструктор OverLoading
+        //Конструктор OverLoading //Constructor Overloading
 
-          //Главное правило// Перезагруженные конструкторы имеют  разный список параметров
+          //MAIN RULE\\ГЛАВНОЕ ПРАВИЛО//
+          // Перезагруженные конструкторы имеют  разный список параметров
           //Разный по типам данных\\
           //Constructor (int a, String b)     {}    //типы данных разные, кол-во может быть одинаковым
           //Constructor (double a, boolean b) {}
@@ -595,19 +615,29 @@ public class Dictionary {
 
         //Конструктор OverLoading Rules
 
+          //RULE FIRST
+
           //Access modifier может быть одинаковый и различный:
           //public Constructor (int a, int b)          {}
           //private Constructor (int a, int b, int c)  {}
           //public Constructor (long a)                {}
+
+          //RULE SECOND
+
           //Конструкторы, отличающиеся только access modifier не являются overloaded (Compile ERROR):
           //public Constructor (int a, String b)       {}
           //private Constructor (int a, String b)      {}
 
-        //T H I S//this в конструкторе
+        //T H I S//this in constructor
 
-          //Конструктор не может вызвать внутри себя overloaded конструктор по имени класса (Compile ERROR):
+          //RULE FIRST
+
+          //Конструктор не может вызвать внутри себя OverLoaded конструктор по имени класса (Compile ERROR):
           //Constructor (int a)                        {}
           //Constructor (int a, int b)                 {}
+
+          //RULE SECOND
+
           //Используйте "this" на первой строке в теле для вызова overloaded конструктора внутри конструктора:
           //public Constructor (int a)                 {}
           //private Constructor (int a, String b)      {
