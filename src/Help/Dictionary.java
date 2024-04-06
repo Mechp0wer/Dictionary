@@ -30,7 +30,7 @@ public class Dictionary {
         enum
         extends
         false - тип данных boolean
-        final - конечный тип, не зменяемое значение
+        final - конечный тип, не изменяемое значение
         finally
         float - тип дробных данных, после запятой 5 знаков
         for
