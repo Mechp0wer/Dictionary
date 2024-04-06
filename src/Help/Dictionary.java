@@ -17,7 +17,7 @@ public class Dictionary {
         abstract
         assert
         boolean - тип данных, 2 параметра true и false
-        break
+        break - оператор перехода, досрочный выход из цикла
         byte - тип коротких данных, от -128 до 127
         case
         catch
@@ -26,7 +26,7 @@ public class Dictionary {
         default - стандартное значение, значение по умолчанию
         do
         double - тип дробных данных, после запятой 8 знаков
-        else
+        else - statement "иначе", работает только с statement "if"
         enum
         extends
         false - тип данных boolean
@@ -35,7 +35,7 @@ public class Dictionary {
         float - тип дробных данных, после запятой 5 знаков
         for
         goto
-        if
+        if - statement "если"
         implements
         import
         instanceof
@@ -49,12 +49,12 @@ public class Dictionary {
         private - access modifier, тип доступа, в данном случае работает только в class
         protected - access modifier, тип доступа, в данном случае работает как default, работает в пределах папки и в классах наследниках
         public - access modifier, тип доступа, в данном случае работает везде и всюду при правильном адресе на него
-        return - вывод значения в методе, только если он не void
+        return - оператор перехода, вывод значения в методе, только если он не void
         short - символьный тип данных, где каждому символу присвоен свой порядковый номер
         static - статическое состоянии переменной/конструктора/метода, доступен для всех
         strictfp
         super
-        switch
+        switch - означает, что вы будете, что-то с чем-то сравнивать
         synchronized
         this - дословно "этот", ссылка на предидущие параметры/конструкторы/методы
         throw
@@ -977,6 +977,154 @@ public class Dictionary {
         //документ который описывает ваш класс, формат этого документа будет HTML
         //пишуться "/**" - означает начало комментариев,
         //и "*/" - конец
+
+        //Аргументы методов\\
+
+        /*
+        Могут быть Primitive data types (примитивный тип данных)
+        Могут быть Reference data types (ссылочный тип данных), если
+        подставляются в параметры, то это копии данных
+         */
+
+        //Flow control\\Контроль хода программы
+
+        /*
+        Можно разделить на две категории selection / looping
+        Selection - это когда нам предстоит выбрать
+        Looping - это когда нам предстоит повторять что то
+         */
+
+        //Синтаксис if statement
+
+        /*
+        Пример
+        if (boolean expression) { //if означает "если" в скобках условие (boolean expression) которое вы проверяете,
+              our code            //в фигурных скобках тело кода, если вы соглашаетесь на условие в скобках
+                                }
+        else {                    //else означает "иначе" в противном случае
+                 our code         //в фигурных скобках тело кода, если вы не соглашаетесь на условия в скобках
+             }
+         */
+
+        //Варианты использования if
+        /*
+        Первый вариант:
+
+        if (boolean expression)
+             {  our code  }
+
+        Второй вариант:
+
+        if (boolean expression)
+             {  our code  }
+        else
+             {  our code  }
+
+        Третий вариант:
+
+        if (boolean expression)
+             {  our code  }
+        else if (boolean expression)
+             {  our code  }
+        else
+             {  our code  }
+
+        Четвертый вариант:
+
+        if (boolean expression)
+        if (boolean expression)
+             {  our code  }
+        else
+             {  our code  }
+        else
+             {  our code  }
+         */
+
+        //Метод E Q U A L S(); //в default существует у всех создаваемых классов
+
+        /*
+        Отношение к классу String;
+        Если у нас есть 3 String "abc", "bcd", "abc"
+        Равными считаются, те объекты String, у которых кол-во букв одинаковое
+        и совпадает по порядку между собой
+        Пример
+        String s1 = new String ("Hello")
+        String s2 = new String ("Hello")
+        if (st1.equals(st2))
+             {  our code  }
+        при boolean сравнении s1 == s2; выдаст false, так как адресы у них разные
+        при boolean сравнении s1.equals(s2) выдаст true, так как будет уже сравнение самих параметров String
+         */
+
+        //Ternary operator\\Тернарный оператор
+
+        /*
+        состоит из 3 операнд
+        (boolean expression) ? (if true) : (if false)  -  где
+        (boolean expression) - условие которое отвечает на вопрос "правда" ли "ложь"
+        ?
+        (if true) - значение при true
+        :
+        (if false) - значение при false
+         */
+
+        //Синтаксис switch statement
+
+        /*
+        "switch" означает что вы будете что-то с чем-то сравнивать
+        (expression) - условие сравнения
+        "case value" - один из возможных вариантов ответа условия
+        "our code" - действие согласно выбранному условию
+        "break" - оператор перехода, выход из цикла
+        "default" - значение согласно отсутствующему варианту из представленных
+        switch (expression) {
+        case value1: our code; break;
+        case value1: our code; break;
+        case value1: our code; break;
+        default:     our code; break;
+        }
+        ПРИМЕР
+         Student st1 = new Student(1);
+        switch (st1.grade){
+            case 2 :
+                System.out.println("Студент двоечник"); break;
+            case 3 :
+                System.out.println("Студент троечник"); break;
+            case 4 :
+                System.out.println("Студент хорошист"); break;
+            case 5 :
+                System.out.println("Студент отличник"); break;
+            default:
+                System.out.println("Оценка не верна");
+        }
+         */
+
+        //Тип данных switch expression
+        /*
+        switch (expression){
+        ................
+        }
+        (expression) у "switch" может быть НЕ любым типом данных
+        возможные типы данных перечислены ниже
+        - byte
+        - short
+        - int
+        - char
+        - String
+        В (expression) так же может происходить действие, например сложение,
+        вычитание, умножение или деление и тд, главное в конечном итоге
+        получить один из представленных выше тип данных
+         */
+
+        //Compile time constants. Что можно использовать после слова case
+
+        /*
+        - 1, -3.14, "privet", 5*10; - так делать можно, конечный результат значение
+        - a = 5; b = 10; a*b; - так делать нельзя, заранее созданные константы a и b могут меняться
+        - final a = 5; final b = 10; a*b; - так делать можно, final переменную менять нельзя
+        - final a; final b; a = 5; b = 10; a*b; - так делать нельзя, нельзя сперва объявить переменную final, а потом присвоить ей значение
+         */
+
 
         //В А Ж Н О Е\\
 
