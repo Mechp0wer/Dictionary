@@ -19,10 +19,10 @@ public class Dictionary {
         boolean - тип данных, 2 параметра true и false
         break - оператор перехода, досрочный выход из цикла
         byte - тип коротких данных, от -128 до 127
-        case
+        case - блок одного из условий в switch переменной
         catch
         const
-        continue
+        continue - оператор остановки кода на определенное время, с последующим продолжением кода
         default - стандартное значение, значение по умолчанию
         do
         double - тип дробных данных, после запятой 8 знаков
@@ -33,11 +33,11 @@ public class Dictionary {
         final - конечный тип, не изменяемое значение
         finally
         float - тип дробных данных, после запятой 5 знаков
-        for
+        for - цикл в Java, for (initialization; condition; update) {expressions;}
         goto
         if - statement "если"
         implements
-        import
+        import - импорт другого класса из другой папки, указывается весь путь, если все классы из папки то в конце "*"
         instanceof
         int - частоиспользуемый целочисленный тип данных
         interface
@@ -54,7 +54,7 @@ public class Dictionary {
         static - статическое состоянии переменной/конструктора/метода, доступен для всех
         strictfp
         super
-        switch - означает, что вы будете, что-то с чем-то сравнивать
+        switch - означает, что вы будете, что-то с чем-то сравнивать. Оператор сравнения
         synchronized
         this - дословно "этот", ссылка на предидущие параметры/конструкторы/методы
         throw
@@ -1125,6 +1125,64 @@ public class Dictionary {
         - final a; final b; a = 5; b = 10; a*b; - так делать нельзя, нельзя сперва объявить переменную final, а потом присвоить ей значение
          */
 
+        //Циклы в Java
+
+        /*
+        "for" или "regular for" - синтаксис: for (initialization; condition; update) {
+             expressions;}
+            где initialization - инициализация, через запятую можно ставить несколько условий
+            condition - условие, можно писать несколько, через булевы операторы && and и || or, если он отсутствует то программа будет выполняться бесконечно
+            update - изменение, через запятую можно ставить несколько изменений, можно в него вставлять методы и писать его в теле метода
+            {expressions} - пишем выполнение кода, как и во многих случаях
+            фигурные скобки можно не писать, если код занимает одну строчку
+        Пример
+        public class Test2 {
+        public static void main(String[] args) {
+        //вывод чисел от 1 до 10
+        for (int i = 1; i <=10; i++){
+        System.out.println(i);
+          }
+        }
+        как это работает
+        1) создается int i = 1; (больше сюда не возвращается)
+        2) выполняется сравнение i <= 10; true
+        3) происходит обработка всего тела цикла for
+        4) опять происходит сравнение
+        5) и так до тех пор пока сравнение не перейдет в значение false
+        while -
+        do while -
+        foreach -
+         */
+
+        //Unreachable statement//Никогда не будет обрабатыватся
+
+        /*
+        Java does not allow to write code with unreachable statement
+        Пример 1. Compile time error! Ошибка времени компиляции
+        for (int i=0; false; i++){
+        some code }
+        Пример 2. Exception to the rule! Исключение из правила!
+        if (false) {
+        some code }
+         */
+
+        //Loop statement
+
+        /*
+        break; - оператор перехода, досрочный выход из цикла
+        continue; - оператор пропуска кода на заданный интервал, с последующим продолжением кода после окончания действия continue
+         */
+
+        //Nested loop//цикл в цикле
+        /*
+        for(initialization_1; condition_1; update_1){
+        expressions_1;
+                for (initialization_2; condition_2; update_2)
+                               {expressions_2;}
+        expressions_3;
+        }
+        You can name loops with labels. It will help you to write complex code.
+         */
 
         //В А Ж Н О Е\\
 
