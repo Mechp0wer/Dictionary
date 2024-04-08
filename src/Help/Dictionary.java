@@ -35,7 +35,7 @@ public class Dictionary {
         float - тип дробных данных, после запятой 5 знаков
         for - цикл в Java, for (initialization; condition; update) {expressions;}
         goto
-        if - statement "если"
+        if - statement "если", подразумевает boolean значение
         implements
         import - импорт другого класса из другой папки, указывается весь путь, если все классы из папки то в конце "*"
         instanceof
